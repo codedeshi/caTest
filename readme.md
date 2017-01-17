@@ -22,6 +22,6 @@ Password	:P@ssw0rd
 Additional admin users can of course be created using python manage.py createsuperuser.
 
 # Web UI: 
-http://127.0.0.1:8000/admin
+http://127.0.0.1:8000/
 I have also made a full website where the users can register and login and interactively submit reviews and look at their reviews. 
 Authentication token is automatically generated for each user and can be viewed by the use on their profile page.
