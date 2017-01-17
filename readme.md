@@ -2,21 +2,22 @@
 
 * Posting reviews:
 http://127.0.0.1:8000/create.json 
-- User can post reviews at this route. Following data is required to be sent as the post body:
-title 		: 	Title for the blog
-sating		:	Rating between 1-5
-summary	:	Summary text for the review
-company	: 	Company for which the user wants to submit the review
+User can post reviews at this route. Following data is required to be sent as the post body:
 
-- Authentication token need to be sent as a header:
-token		:	 Authentication token
++ title 		: 	Title for the blog
++ sating		:	Rating between 1-5
++ summary	:	Summary text for the review
++ company	: 	Company for which the user wants to submit the review
+
+Authentication token need to be sent as a header:
++token		:	 Authentication token
 
 * Retrieving Reviews:
 http://127.0.0.1:8000/retrive.json
 User can retrieve only their reviews by sending a GET request to this link with the authentication token in the header.
 
-- Authentication token need to be sent as a header:
-token		:	 Authentication token
+Authentication token need to be sent as a header:
++ token		:	 Authentication token
 
 * Admin view:
 http://127.0.0.1:8000/admin
