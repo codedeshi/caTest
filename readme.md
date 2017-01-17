@@ -16,7 +16,7 @@ Authentication token need to be sent as a header:
 http://127.0.0.1:8000/retrive.json
 User can retrieve only their reviews by sending a GET request to this link with the authentication token in the header.
 
-Authentication token need to be sent as a header:
+* Authentication token need to be sent as a header:
 	+ token			:	 Authentication token
 
 * Admin view:
