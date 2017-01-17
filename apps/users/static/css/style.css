@@ -1,0 +1,110 @@
+* {
+  font-family: Calibri;
+  margin: 0;
+  padding: 0;
+}
+#header {
+  width: 100%;
+	overflow: hidden;
+	margin-top: 30px;
+}
+#header h1 {
+	font-weight: normal;
+  display: inline;
+}
+
+#header input {
+	width: 250px;
+	color: white;
+	border-radius: 5px;
+	border: none;  
+	font-size: 1em;
+	padding: 10px;
+}
+#header a {
+  float: right;
+  margin: 20px;
+} 
+
+#wrap {
+  width: 1200px;  
+  margin: auto auto;
+  font-size: 1.5em;
+}
+.box {
+  margin-top: 20px;
+  width: 45%;
+  overflow: hidden;
+  border-radius: 20px;
+  
+}
+label {
+  display: block;
+  margin: 10px 30px;
+  padding: 10px 0;
+}
+input, select, textarea{
+  display: block;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 1em;
+}
+
+
+.green {
+  float: right;
+  width: 200px;
+  border-radius: 5px;
+  border: none;  
+  background-color: seagreen;
+  color: white;
+  font-size: 1em;
+  margin-bottom: 20px;
+  padding: 10px 0;
+}
+
+.box h1 {
+  border-radius: 15px 15px 0 0;
+  padding: 0 10px;
+  font-weight: normal;
+}
+#errors {
+  font-size: .5em;
+  color: red;
+  border: none;
+
+}
+#registration, #login {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 20px;
+}
+#mid {
+	width: 70%;
+	margin: 30px auto;
+}
+
+#reviewsDisplay, #reviewForm  {
+  display: inline-block;
+  vertical-align: top;
+}
+
+#reviewsDisplay {
+  width: 60%;
+}
+#reviewform{
+  width: 39%
+}
+#reviewsDisplay h3 {
+  margin-top: 20px;
+}
+
+#revs {
+  margin: 20px 0;
+}
+
+ul {
+  list-style: none;
+  list-style-position: inside;
+  padding-left: 20px;
+}

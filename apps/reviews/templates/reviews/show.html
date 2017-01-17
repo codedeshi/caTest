@@ -1,0 +1,49 @@
+{% load staticfiles %}
+		<link rel="stylesheet" href="{% static 'css/style.css' %}"media="screen" title="no title"  charset="utf-8">
+<div id="wrap">	
+	<div id="header">
+	<h1>Welcome {{request.session.user.name}}!!!</h1>
+		<a href="{% url 'show' %}">Profile</a>
+		<a href="{% url 'logout' %}">Logout</a>
+	</div>
+	<div id="reviewsDisplay">
+
+		<h3>Here are your reveiws</h3>
+		{% for review in reviews %}
+			<div id="revs">
+				<h4>Title: {{review.title}}</h4>
+				<h4>Company: {{review.company}}</h4>
+				<p>Summary: {{review.summary}}</p>
+			</div>
+		{%endfor%}
+	</div>
+	<div id="reviewForm" class='box'>
+		<h3>Add new review</h3>
+		<form action="{% url 'createReview' %}" method="POST">
+			{% csrf_token %}
+			<label>Title <input type="text" name='title'></label>
+			<label>Company<input type="text" name='company'></label>
+			<label>Rating
+				<select name='rating'>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="4">5</option>			
+				</select>
+			</label>
+			<label> Summary <textarea name="summary" id="ta"></textarea></label>
+			<label><input class='green' type="submit" name='submit'></label>
+		</form>
+
+	</div>
+
+		{% if messages %}
+		<ul class="messages">
+				{% for message in messages %}
+				<li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+				{% endfor %}
+		</ul>
+		{% endif %}
+
+</div>
